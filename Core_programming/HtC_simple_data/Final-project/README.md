@@ -12,7 +12,7 @@
 > - The invaders should appear randomly along the top of the screen and move at a 45 degree angle. When they hit a wall they will bounce off and continue at a 45 degree angle in the other direction.
 > - When an invader reaches the bottom of the screen, the game is over. 
 
-**[My Code]:** [space-invaders.rkt](https://github.com/zarry0/cs_curriculum/tree/main/Core_programming/HtC_simple_data/Final-project)
+**[My Code]:** [space-invaders.rkt](https://github.com/zarry0/cs_curriculum/tree/main/Core_programming/HtC_simple_data/Final-project/space-invaders.rkt)
 
 
 
