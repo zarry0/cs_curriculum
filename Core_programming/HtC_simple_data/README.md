@@ -23,7 +23,7 @@ And suddenly, somewhere in the middle, things start to click, and everything mak
   
   
 
-After a few months and a few other courses, I decided I should continue with de OSSU CS curriculum, which presented the question: should I start over HtC: Simple Data? or should I pick it up where I left it? Finally, I chose to start over, and oh boy! I chose wisely.
+After a few months and a few other courses, I decided I should continue with the OSSU CS curriculum, which presented the question: should I start over HtC: Simple Data? or should I pick it up where I left it? Finally, I chose to start over, and oh boy! I chose wisely.
 
   
   
