@@ -218,9 +218,9 @@
 ;(define (beaten-teams? brkt lst) false)  ;stub
 
 (define (beaten-teams? brkt lst)
-  (cond [(empty? lst) true]
-        [(false? brkt) false]
-        [else
+  (cond [(empty? lst) true]                                         ;1
+        [(false? brkt) false]                                       ;2
+        [else                                                       ;3 
          (if (string=? (first lst) (bracket-team-lost brkt))
              (beaten-teams? (bracket-br-won brkt) (rest lst))
              (beaten-teams? (bracket-br-won brkt) lst))]))
