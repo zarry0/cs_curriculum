@@ -102,7 +102,7 @@
 ;; Function 3
 ;; ==========
 
-;; (listof Natural -> Boolean
+;; (listof Natural) -> Boolean
 ;; produce true if all elements of the list are odd
 (check-expect (all-odd? empty) true)
 (check-expect (all-odd? (list 1 2 3 4 5)) false)
@@ -211,7 +211,7 @@
     (fn-for-region r)))
 
 
-;; Region -> (listof Region)
+;; Region -> (listof String)
 ;; produces a list of all the names of all the regions in that region.
 (check-expect (all-regions CANADA) (list "Canada" "British Columbia" "Vancouver" "Victoria" "Alberta" "Calgary" "Edmonton"))
 (check-expect (all-regions VANCOUVER) (list "Vancouver"))
