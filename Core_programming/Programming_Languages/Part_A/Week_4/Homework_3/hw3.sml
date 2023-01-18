@@ -116,7 +116,7 @@ val count_wildcards = g (fn () => 1) (fn _ => 0)
 (* 9b)
     pattern -> int
     produces the number of Wildcards plus the length of all Variable name string in t he pattern *)
-val count_wild_and_variable_lengths = g (fn () => 1) (fn s => String.size s) 
+val count_wild_and_variable_lengths = g (fn () => 1) String.size 
 
 (* 9c)
     string * pattern -> int
