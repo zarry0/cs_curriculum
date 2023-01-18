@@ -199,12 +199,15 @@ fun typecheck_patterns (_,[]) = NONE
             |   (IntT,IntT)   => SOME IntT
             |   (Datatype s1,Datatype s2) => if s1 = s2 then SOME(Datatype s1) else NONE
             |   (TupleT xs,TupleT ys) => 
-                    let val tuple_list_option = List.map most_lenient (ListPair.zipEq(xs,ys))
-                        val tuple_list = check_list(tuple_list_option,[])
-                    in case tuple_list of
-                            NONE => NONE
-                        |   SOME lst => SOME (TupleT (List.rev lst))
-                    end
+                    if List.length xs <> List.length ys 
+                    then NONE 
+                    else
+                        let val tuple_list_option = List.map most_lenient (ListPair.zipEq(xs,ys))
+                            val tuple_list = check_list(tuple_list_option,[])
+                        in case tuple_list of
+                                NONE => NONE
+                            |   SOME lst => SOME (TupleT (List.rev lst))
+                        end
             |   (_,_) => NONE
 
         (*  (string * string * typ) list * pattern -> typ option
