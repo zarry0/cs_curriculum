@@ -77,7 +77,6 @@
                                 (lambda () (f (+ n 1)))))])
     (lambda () (f 0))))
 
-
 ;; 9)
 ;; x (vectorof y) -> y | #f
 ;; produces the first pair in the vector whose car is equal to v
