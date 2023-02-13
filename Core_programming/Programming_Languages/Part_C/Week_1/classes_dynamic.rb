@@ -1,7 +1,7 @@
 # Programming Languages, Dan Grossman
 # Section 7: Class Definitions are Dynamic
 
-require_relative './127_example' # similar to ML's use
+require_relative './example' # similar to ML's use
 
 # above line defines the MyRational class, but now we can change it
 
