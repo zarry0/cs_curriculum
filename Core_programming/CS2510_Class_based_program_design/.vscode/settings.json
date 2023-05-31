@@ -1,0 +1,10 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/zarry/javalibs/CS2510/javalib.jar",
+        "/Users/zarry/javalibs/CS2510/tester.jar"
+    ],
+    "java.project.sourcePaths": [
+        "../*/*"
+    ]
+}
