@@ -12,38 +12,37 @@ import tester.Tester;
  /*
   * Class diagram
 
-            +----------+
-            | IListing |
-            +----------+
-                 |
-                / \
-                ---
-                 |
-                 |
-        +-----------------+
-        |                 |
-  +-----------+     +-------------+
-  | MtListing |     | ConsListing |
-  +-----------+     |-------------|        +-----------------+
-                    | House house +------->| House           |
-                    +-------------+        +-----------------+
-                                           | String kind     |
-                                           | int rooms       |
-                                   +-------+ Address address |
-                                   |       | double price    |
-                                   |       +-----------------+
-                                   |
-                                   |
-                                   v
-                               +----------------+
-                               | Address        |
-                               +----------------+
-                               | int stNumber   |
-                               | String stName  |
-                               | String city    |
-                               +----------------+
-
-  */
+                  +----------+
+    +------------>| IListing |
+    |             +----------+
+    |                  |
+    |                 / \
+    |                 ---
+    |                  |
+    |                  |
+    |         +-----------------+
+    |         |                 |
+    |   +-----------+     +---------------+
+    |   | MtListing |     | ConsListing   |
+    |   +-----------+     |---------------|      +-----------------+
+    |                     | House house   +----->| House           |
+    +---------------------+ IListing rest |      +-----------------+
+                          +---------------+      | String kind     |
+                                                 | int rooms       |
+                                         +-------+ Address address |
+                                         |       | double price    |
+                                         |       +-----------------+
+                                         |
+                                         |
+                                         v
+                                     +----------------+
+                                     | Address        |
+                                     +----------------+
+                                     | int stNumber   |
+                                     | String stName  |
+                                     | String city    |
+                                     +----------------+
+*/
 
 class House {
     String kind;

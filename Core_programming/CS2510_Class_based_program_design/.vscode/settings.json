@@ -6,5 +6,8 @@
     ],
     "java.project.sourcePaths": [
         "../*/*"
-    ]
+    ],
+    "java.inlayHints.parameterNames.enabled": "none",
+    "zenMode.hideLineNumbers": false,
+    "editor.fontSize": 18
 }
