@@ -13,7 +13,7 @@
 ; cloud). 
 ;
 ; f(n) = /   n/2     if n is even
-;       \   3n + 1  if n is odd 
+;        \   3n + 1  if n is odd 
 ;      
 ;
 ; The Collatz conjecture is: This process will eventually reach

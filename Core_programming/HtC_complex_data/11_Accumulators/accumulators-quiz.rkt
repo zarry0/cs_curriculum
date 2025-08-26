@@ -38,19 +38,7 @@
 
 ;
 ; PROBLEM 2:
-; 
-; The Fibbonacci Sequence https://en.wikipedia.org/wiki/Fibonacci_number is 
-; the sequence 0, 1, 1, 2, 3, 5, 8, 13,... where the nth element is equal to 
-; fib(n-2) + fib(n-1). 
-; 
-; Design a function that given a list of numbers at least two elements long, 
-; determines if the list obeys the fibonacci rule, n-2 + n-1 = n, for every 
-; element in the list. The sequence does not have to start at zero, so for 
-; example, the sequence 4, 5, 9, 14, 23 would follow the rule. 
-; 
-
-;; (listof Number) -> Boolean
-;; produces true if the sequence obeys the fibonacci rule: fib(n) = fib(n-2) + fib(n-1)
+;  ;; produces true if the sequence obeys the fibonacci rule: fib(n) = fib(n-2) + fib(n-1)
 ;; ASSUME: the list will be at least 2 items long
 (check-expect (fib? (list 1 2)) true)
 (check-expect (fib? (list 4 5)) true)
